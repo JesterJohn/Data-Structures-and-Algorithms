@@ -1,0 +1,410 @@
+﻿namespace Data_Structures_and_Algorithms
+{
+    partial class Form3
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.A_SpecialPizzaCheckBox = new System.Windows.Forms.CheckBox();
+            this.A_SideDishCheckBox = new System.Windows.Forms.CheckBox();
+            this.A_CokeCheckBox = new System.Windows.Forms.CheckBox();
+            this.A_FriesCheckBox = new System.Windows.Forms.CheckBox();
+            this.A_FriedChickenCheckBox = new System.Windows.Forms.CheckBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.B_HawaiianCheckbox = new System.Windows.Forms.CheckBox();
+            this.B_FriesCheckBox = new System.Windows.Forms.CheckBox();
+            this.B_CarbonaraCheckBox = new System.Windows.Forms.CheckBox();
+            this.B_ChickenCheckBox = new System.Windows.Forms.CheckBox();
+            this.B_HaloHaloCheckBox = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.DiscountTextbox = new System.Windows.Forms.TextBox();
+            this.priceTextbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.DisplayPictureBox = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.foodRdbtn = new System.Windows.Forms.RadioButton();
+            this.foodARdbtn = new System.Windows.Forms.RadioButton();
+            this.groupBox3.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DisplayPictureBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(149, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(612, 102);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "FOODIE HUB";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.A_SpecialPizzaCheckBox);
+            this.groupBox3.Controls.Add(this.A_SideDishCheckBox);
+            this.groupBox3.Controls.Add(this.A_CokeCheckBox);
+            this.groupBox3.Controls.Add(this.A_FriesCheckBox);
+            this.groupBox3.Controls.Add(this.A_FriedChickenCheckBox);
+            this.groupBox3.Location = new System.Drawing.Point(520, 166);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(383, 326);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Food Bundles A";
+            // 
+            // A_SpecialPizzaCheckBox
+            // 
+            this.A_SpecialPizzaCheckBox.AutoSize = true;
+            this.A_SpecialPizzaCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A_SpecialPizzaCheckBox.Location = new System.Drawing.Point(28, 279);
+            this.A_SpecialPizzaCheckBox.Name = "A_SpecialPizzaCheckBox";
+            this.A_SpecialPizzaCheckBox.Size = new System.Drawing.Size(236, 29);
+            this.A_SpecialPizzaCheckBox.TabIndex = 11;
+            this.A_SpecialPizzaCheckBox.Text = "Special Pizza Delights ";
+            this.A_SpecialPizzaCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // A_SideDishCheckBox
+            // 
+            this.A_SideDishCheckBox.AutoSize = true;
+            this.A_SideDishCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A_SideDishCheckBox.Location = new System.Drawing.Point(28, 221);
+            this.A_SideDishCheckBox.Name = "A_SideDishCheckBox";
+            this.A_SideDishCheckBox.Size = new System.Drawing.Size(168, 29);
+            this.A_SideDishCheckBox.TabIndex = 10;
+            this.A_SideDishCheckBox.Text = "4 Slide Dishes ";
+            this.A_SideDishCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // A_CokeCheckBox
+            // 
+            this.A_CokeCheckBox.AutoSize = true;
+            this.A_CokeCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A_CokeCheckBox.Location = new System.Drawing.Point(28, 161);
+            this.A_CokeCheckBox.Name = "A_CokeCheckBox";
+            this.A_CokeCheckBox.Size = new System.Drawing.Size(117, 29);
+            this.A_CokeCheckBox.TabIndex = 9;
+            this.A_CokeCheckBox.Text = "1.5 Coke";
+            this.A_CokeCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // A_FriesCheckBox
+            // 
+            this.A_FriesCheckBox.AutoSize = true;
+            this.A_FriesCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A_FriesCheckBox.Location = new System.Drawing.Point(28, 104);
+            this.A_FriesCheckBox.Name = "A_FriesCheckBox";
+            this.A_FriesCheckBox.Size = new System.Drawing.Size(152, 29);
+            this.A_FriesCheckBox.TabIndex = 8;
+            this.A_FriesCheckBox.Text = "2 Large Fries";
+            this.A_FriesCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // A_FriedChickenCheckBox
+            // 
+            this.A_FriedChickenCheckBox.AutoSize = true;
+            this.A_FriedChickenCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A_FriedChickenCheckBox.Location = new System.Drawing.Point(28, 50);
+            this.A_FriedChickenCheckBox.Name = "A_FriedChickenCheckBox";
+            this.A_FriedChickenCheckBox.Size = new System.Drawing.Size(311, 29);
+            this.A_FriedChickenCheckBox.TabIndex = 7;
+            this.A_FriedChickenCheckBox.Text = "10 pcs. Delicious Fried Chicken";
+            this.A_FriedChickenCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.B_HawaiianCheckbox);
+            this.groupBox6.Controls.Add(this.B_FriesCheckBox);
+            this.groupBox6.Controls.Add(this.B_CarbonaraCheckBox);
+            this.groupBox6.Controls.Add(this.B_ChickenCheckBox);
+            this.groupBox6.Controls.Add(this.B_HaloHaloCheckBox);
+            this.groupBox6.Location = new System.Drawing.Point(520, 500);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(380, 339);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Food Bundles B";
+            // 
+            // B_HawaiianCheckbox
+            // 
+            this.B_HawaiianCheckbox.AutoSize = true;
+            this.B_HawaiianCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_HawaiianCheckbox.Location = new System.Drawing.Point(28, 285);
+            this.B_HawaiianCheckbox.Name = "B_HawaiianCheckbox";
+            this.B_HawaiianCheckbox.Size = new System.Drawing.Size(267, 29);
+            this.B_HawaiianCheckbox.TabIndex = 16;
+            this.B_HawaiianCheckbox.Text = "1 Meduim Hawaiian Pizza ";
+            this.B_HawaiianCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // B_FriesCheckBox
+            // 
+            this.B_FriesCheckBox.AutoSize = true;
+            this.B_FriesCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_FriesCheckBox.Location = new System.Drawing.Point(28, 226);
+            this.B_FriesCheckBox.Name = "B_FriesCheckBox";
+            this.B_FriesCheckBox.Size = new System.Drawing.Size(213, 29);
+            this.B_FriesCheckBox.TabIndex = 15;
+            this.B_FriesCheckBox.Text = "1 Family Pack Fries ";
+            this.B_FriesCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // B_CarbonaraCheckBox
+            // 
+            this.B_CarbonaraCheckBox.AutoSize = true;
+            this.B_CarbonaraCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_CarbonaraCheckBox.Location = new System.Drawing.Point(28, 164);
+            this.B_CarbonaraCheckBox.Name = "B_CarbonaraCheckBox";
+            this.B_CarbonaraCheckBox.Size = new System.Drawing.Size(263, 29);
+            this.B_CarbonaraCheckBox.TabIndex = 14;
+            this.B_CarbonaraCheckBox.Text = "1 Family Pack Carbonara ";
+            this.B_CarbonaraCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // B_ChickenCheckBox
+            // 
+            this.B_ChickenCheckBox.AutoSize = true;
+            this.B_ChickenCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_ChickenCheckBox.Location = new System.Drawing.Point(28, 102);
+            this.B_ChickenCheckBox.Name = "B_ChickenCheckBox";
+            this.B_ChickenCheckBox.Size = new System.Drawing.Size(305, 29);
+            this.B_ChickenCheckBox.TabIndex = 13;
+            this.B_ChickenCheckBox.Text = "6 pcs. Delicious Fried Chicken ";
+            this.B_ChickenCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // B_HaloHaloCheckBox
+            // 
+            this.B_HaloHaloCheckBox.AutoSize = true;
+            this.B_HaloHaloCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_HaloHaloCheckBox.Location = new System.Drawing.Point(28, 46);
+            this.B_HaloHaloCheckBox.Name = "B_HaloHaloCheckBox";
+            this.B_HaloHaloCheckBox.Size = new System.Drawing.Size(345, 29);
+            this.B_HaloHaloCheckBox.TabIndex = 12;
+            this.B_HaloHaloCheckBox.Text = "4 Cups Special Halo - Halo Regular";
+            this.B_HaloHaloCheckBox.UseVisualStyleBackColor = true;
+            this.B_HaloHaloCheckBox.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.foodRdbtn);
+            this.groupBox1.Controls.Add(this.foodARdbtn);
+            this.groupBox1.Location = new System.Drawing.Point(12, 166);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(491, 200);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Food Order Choices";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.DiscountTextbox);
+            this.groupBox2.Controls.Add(this.priceTextbox);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Location = new System.Drawing.Point(12, 372);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(491, 122);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Order Details";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(22, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 25);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Discount";
+            // 
+            // DiscountTextbox
+            // 
+            this.DiscountTextbox.Location = new System.Drawing.Point(130, 78);
+            this.DiscountTextbox.Name = "DiscountTextbox";
+            this.DiscountTextbox.Size = new System.Drawing.Size(349, 26);
+            this.DiscountTextbox.TabIndex = 1;
+            // 
+            // priceTextbox
+            // 
+            this.priceTextbox.Location = new System.Drawing.Point(130, 35);
+            this.priceTextbox.Name = "priceTextbox";
+            this.priceTextbox.Size = new System.Drawing.Size(349, 26);
+            this.priceTextbox.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(38, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 25);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Price";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.button1);
+            this.groupBox7.Controls.Add(this.button2);
+            this.groupBox7.Controls.Add(this.DisplayPictureBox);
+            this.groupBox7.Controls.Add(this.label7);
+            this.groupBox7.Location = new System.Drawing.Point(12, 500);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(491, 339);
+            this.groupBox7.TabIndex = 6;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = " ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(249, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 66);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(43, 267);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 66);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Clear";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // DisplayPictureBox
+            // 
+            this.DisplayPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DisplayPictureBox.Location = new System.Drawing.Point(144, 25);
+            this.DisplayPictureBox.Name = "DisplayPictureBox";
+            this.DisplayPictureBox.Size = new System.Drawing.Size(335, 230);
+            this.DisplayPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DisplayPictureBox.TabIndex = 4;
+            this.DisplayPictureBox.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 115);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(132, 25);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Order Image";
+            // 
+            // foodRdbtn
+            // 
+            this.foodRdbtn.AutoSize = true;
+            this.foodRdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodRdbtn.Location = new System.Drawing.Point(154, 66);
+            this.foodRdbtn.Name = "foodRdbtn";
+            this.foodRdbtn.Size = new System.Drawing.Size(191, 29);
+            this.foodRdbtn.TabIndex = 7;
+            this.foodRdbtn.TabStop = true;
+            this.foodRdbtn.Text = "Food Bundles A";
+            this.foodRdbtn.UseVisualStyleBackColor = true;
+            this.foodRdbtn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // foodARdbtn
+            // 
+            this.foodARdbtn.AutoSize = true;
+            this.foodARdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodARdbtn.Location = new System.Drawing.Point(154, 128);
+            this.foodARdbtn.Name = "foodARdbtn";
+            this.foodARdbtn.Size = new System.Drawing.Size(190, 29);
+            this.foodARdbtn.TabIndex = 8;
+            this.foodARdbtn.TabStop = true;
+            this.foodARdbtn.Text = "Food Bundles B";
+            this.foodARdbtn.UseVisualStyleBackColor = true;
+            this.foodARdbtn.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // Form3
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(912, 851);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label1);
+            this.Name = "Form3";
+            this.Text = "EXAMPLE 4 ";
+            this.Load += new System.EventHandler(this.Form3_Load);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DisplayPictureBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox A_FriedChickenCheckBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox DiscountTextbox;
+        private System.Windows.Forms.TextBox priceTextbox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox DisplayPictureBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox A_SpecialPizzaCheckBox;
+        private System.Windows.Forms.CheckBox A_SideDishCheckBox;
+        private System.Windows.Forms.CheckBox A_CokeCheckBox;
+        private System.Windows.Forms.CheckBox A_FriesCheckBox;
+        private System.Windows.Forms.CheckBox B_HaloHaloCheckBox;
+        private System.Windows.Forms.CheckBox B_HawaiianCheckbox;
+        private System.Windows.Forms.CheckBox B_FriesCheckBox;
+        private System.Windows.Forms.CheckBox B_CarbonaraCheckBox;
+        private System.Windows.Forms.CheckBox B_ChickenCheckBox;
+        private System.Windows.Forms.RadioButton foodARdbtn;
+        private System.Windows.Forms.RadioButton foodRdbtn;
+    }
+}
