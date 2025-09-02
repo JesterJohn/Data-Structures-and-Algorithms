@@ -64,7 +64,7 @@ namespace Data_Structures_and_Algorithms
 
             TotalTuitionFeesTextbox2.Clear();
             TotalMiscellanouosFeesTextbox2.Clear();
-            TotalMiscellanouosFeesTextbox2.Clear();
+            TotalNoofUnitsTextbox2.Clear();
             TotalTuitionandFeestextbox2.Clear();
             ComputerLabFeeTextbox2.Clear();
             CISCOLabFeeTextbox2.Clear();
