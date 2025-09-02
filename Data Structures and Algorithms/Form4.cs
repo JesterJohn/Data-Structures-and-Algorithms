@@ -62,6 +62,16 @@ namespace Data_Structures_and_Algorithms
             ExamBookletFeeTextbox.Clear();
             TotalTuitionandFeeTextbox.Clear();
 
+            TotalTuitionFeesTextbox2.Clear();
+            TotalMiscellanouosFeesTextbox2.Clear();
+            TotalMiscellanouosFeesTextbox2.Clear();
+            TotalTuitionandFeestextbox2.Clear();
+            ComputerLabFeeTextbox2.Clear();
+            CISCOLabFeeTextbox2.Clear();
+            ExamBookletTextbox2.Clear();
+
+
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -75,15 +85,14 @@ namespace Data_Structures_and_Algorithms
             TimeListbox.Items.Add(TimeTextbox.Text);
             DayListbox.Items.Add(DayTextbox.Text);
 
-            TotalTuitionFeeListbox.Items.Add(TotalTuitionFeeTextbox.Text);
-            TotalMiscellanuousFeeListbox.Items.Add(TotalMiscellanuousFeeTextbox.Text);
-            TotalNoofUnitsListbox.Items.Add(TotalNoUnitstextbox.Text);
-            TotalTuitionandFeesListbox.Items.Add(TotalTuitionandFeeTextbox.Text);
-
-            ComputerLabFeeListbox.Items.Add(LabFeesTextbox.Text);
-            CISCOLabFeeListbox.Items.Add(CiscoLabFeeTextbox.Text);
-            ExamBookletListbox.Items.Add(ExamBookletFeeTextbox.Text);
-           
+            TotalTuitionFeesTextbox2.Text = TotalTuitionFeeTextbox.Text;
+            TotalMiscellanouosFeesTextbox2.Text = TotalMiscellanuousFeeTextbox.Text;
+            TotalNoofUnitsTextbox2.Text = TotalNoUnitstextbox.Text;
+            TotalTuitionandFeestextbox2.Text = TotalTuitionandFeeTextbox.Text;
+            ComputerLabFeeTextbox2.Text = LabFeesTextbox.Text;
+            CISCOLabFeeTextbox2.Text = CiscoLabFeeTextbox.Text;
+            ExamBookletTextbox2.Text = ExamBookletFeeTextbox.Text;
+         
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
@@ -145,8 +154,6 @@ namespace Data_Structures_and_Algorithms
         {
 
         }
-
-       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

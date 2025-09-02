@@ -29,26 +29,26 @@ namespace Data_Structures_and_Algorithms
             changetextbox.Enabled = false;
 
             //Codes for inserting picture or image inside the picturebox tool
-            pictureBox1.Image = Image.FromFile(@"C:\Users\Jester\source\repos\Data Structures and Algorithms\Data Structures and Algorithms\Images\adobo.jpg");
-            pictureBox2.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\bbq.jpg");
-            pictureBox3.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\beef nilaga.jpg");
-            pictureBox4.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\giniling.jpg");
-            pictureBox5.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\kaldereta.jpg");
-            pictureBox6.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\lechon.jpg");
-            pictureBox7.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\mechado.jpg");
-            pictureBox8.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\menudo.png");
-            pictureBox9.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\monggo.jpg");
-            pictureBox10.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pinakbet.jpg");
-            pictureBox11.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pochero.jpg");
-            pictureBox12.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pork Siomai.jpg");
-            pictureBox13.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\shanghai.jpg");
-            pictureBox14.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\sinigang.jpg");
-            pictureBox15.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\sisig.jpg");
-            pictureBox16.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\sopas.jpg");
-            pictureBox17.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\tinola.jpg");
-            pictureBox18.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\kare kare.jpg");
-            pictureBox19.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pancit.jpg");
-            pictureBox20.Image = Image.FromFile(@"C:\\Users\\Jester\\source\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\Bicol_Express.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\adobo.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\bbq.jpg");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\beef nilaga.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\giniling.jpg");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\kaldereta.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\lechon.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\mechado.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\menudo.png");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\monggo.jpg");
+            pictureBox10.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pinakbet.jpg");
+            pictureBox11.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pochero.jpg");
+            pictureBox12.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pork Siomai.jpg");
+            pictureBox13.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\shanghai.jpg");
+            pictureBox14.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\sinigang.jpg");
+            pictureBox15.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\sisig.jpg");
+            pictureBox16.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\sopas.jpg");
+            pictureBox17.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\tinola.jpg");
+            pictureBox18.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\kare kare.jpg");
+            pictureBox19.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pancit.jpg");
+            pictureBox20.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\Bicol_Express.jpg");
 
         }
 
@@ -240,6 +240,132 @@ namespace Data_Structures_and_Algorithms
             name20lbl.Text = "Bicol Express";
             itemnametextbox.Text = "Bicol Express";
             pricetextbox.Text = "130";
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of variables within a method of an object 
+            int qty;
+            double price, discount_amt, discounted_amt;
+
+            // convert string data from textboxes to numeric and place it as avalue of the variable 
+            qty = Convert.ToInt32(quantityTextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+
+            // create a formula needed for computation
+            discount_amt = (qty * price) * 0.30;
+            discounted_amt = (qty * price) - discount_amt;
+
+            //converting numeric fata to string and display it inside the textboxes
+            discounttextbox.Text = discount_amt.ToString("n");
+            discountedtextbox.Text = discounted_amt.ToString("n");
+
+            //codes for checking the other radio buttons in the interface once the senior citizen card method executed 
+            regularRdbtn.Checked = false;
+            EmployeeRdbtn.Checked = false;
+            noTaxRdbtn.Checked = false;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regularRdbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of variables within a method of an object 
+            int qty;
+            double price, discount_amt, discounted_amt;
+
+            // convert string data from textboxes to numeric and place it as avalue of the variable 
+            qty = Convert.ToInt32(quantityTextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+
+            // create a formula needed for computation
+            discount_amt = (qty * price) * 0.10;
+            discounted_amt = (qty * price) - discount_amt;
+
+            //converting numeric fata to string and display it inside the textboxes
+            discounttextbox.Text = discount_amt.ToString("n");
+            discountedtextbox.Text = discounted_amt.ToString("n");
+
+            //codes for checking the other radio buttons in the interface once the senior citizen card method executed 
+            seniocitizenRdbtn.Checked = false;
+            EmployeeRdbtn.Checked = false;
+            noTaxRdbtn.Checked = false;
+        }
+
+        private void EmployeeRdbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of variables within a method of an object 
+            int qty;
+            double price, discount_amt, discounted_amt;
+
+            // convert string data from textboxes to numeric and place it as avalue of the variable 
+            qty = Convert.ToInt32(quantityTextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+
+            // create a formula needed for computation
+            discount_amt = (qty * price) * 0.15;
+            discounted_amt = (qty * price) - discount_amt;
+
+            //converting numeric fata to string and display it inside the textboxes
+            discounttextbox.Text = discount_amt.ToString("n");
+            discountedtextbox.Text = discounted_amt.ToString("n");
+
+            //codes for checking the other radio buttons in the interface once the senior citizen card method executed 
+            seniocitizenRdbtn.Checked = false;
+            regularRdbtn.Checked = false;
+            noTaxRdbtn.Checked = false;
+        }
+
+        private void noTaxRdbtn_CheckedChanged(object sender, EventArgs e)
+        {
+            //Declaration of variables within a method of an object 
+            int qty;
+            double price, discount_amt, discounted_amt;
+
+            // convert string data from textboxes to numeric and place it as avalue of the variable 
+            qty = Convert.ToInt32(quantityTextbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+
+            // create a formula needed for computation
+            discount_amt = (qty * price) * 0;
+            discounted_amt = (qty * price) - discount_amt;
+
+            //converting numeric fata to string and display it inside the textboxes
+            discounttextbox.Text = discount_amt.ToString("n");
+            discountedtextbox.Text = discounted_amt.ToString("n");
+
+            //codes for checking the other radio buttons in the interface once the senior citizen card method executed 
+            seniocitizenRdbtn.Checked = false;
+            regularRdbtn.Checked = false;
+            EmployeeRdbtn.Checked = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // declaration of variables with data types 
+            int qty;
+            double discount_mt, discounted_amt, cash_rendered, change;
+            qty = Convert.ToInt32(quantityTextbox.Text);
+            discounted_amt = Convert.ToDouble(discounttextbox.Text);
+            discounted_amt = Convert.ToDouble(discountedtextbox.Text);
+            cash_rendered = Convert.ToDouble(cashrenderedtextbox.Text);
+
+            //codes to accoumulate teh value of the quantity, discount given, and discounted amount from one transaction to another
+
+            int qty_total = 0;
+            double discount_totalgiven = 0;
+            double discounted_total = 0;
+
+            qty_total += qty;
+            discount_totalgiven += discounted_amt;
+            discounted_totaltextbox += discounted_amt;
+
+
+
         }
     }
 }
