@@ -12,6 +12,7 @@ namespace Data_Structures_and_Algorithms
 {
     public partial class Form4 : Form
     {
+        private int TotalNoofUnits = 0;
         public Form4()
         {
             InitializeComponent();
@@ -28,6 +29,18 @@ namespace Data_Structures_and_Algorithms
             CourseCombobox.Items.Add("Bachelor or Science in Industrial Engineering");
             CourseCombobox.Items.Add("Bachelor or Science in Electrical Engineering");
             CourseCombobox.Items.Add("Bachelor or Science in Electronics Engineering");
+
+            //code for disabling the textboxes
+            TotalNoUnitstextbox.Enabled = false;
+            TotalTuitionFeeTextbox.Enabled = false;
+            CreditUnitsTextbox.Enabled = false;
+            TotalMiscellanuousFeeTextbox.Enabled = false;
+            TotalTuitionandFeeTextbox.Enabled = false;
+            TotalOtherschoolFeesTextbox.Enabled = false;
+
+            TotalNoofUnitsTextbox2.Enabled = false;
+            TotalTuitionandFeestextbox2.Enabled = false;
+           
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -70,8 +83,6 @@ namespace Data_Structures_and_Algorithms
             CISCOLabFeeTextbox2.Clear();
             ExamBookletTextbox2.Clear();
 
-
-
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -92,7 +103,55 @@ namespace Data_Structures_and_Algorithms
             ComputerLabFeeTextbox2.Text = LabFeesTextbox.Text;
             CISCOLabFeeTextbox2.Text = CiscoLabFeeTextbox.Text;
             ExamBookletTextbox2.Text = ExamBookletFeeTextbox.Text;
-         
+
+            //code to calculate the credit units 
+            int creditUnits;
+
+            int lec = Convert.ToInt32(UnitLectureTextbox.Text);
+            int lab = Convert.ToInt32(UnitLabTextbox.Text);
+            creditUnits = (lec + lab);
+
+            UnitLectureTextbox.Text = lec.ToString("n");
+            UnitLabTextbox.Text = lab.ToString("n");
+
+            CreditUnitsTextbox.Text = creditUnits.ToString();
+
+            TotalNoofUnits += creditUnits;
+            TotalNoUnitstextbox.Text = TotalNoofUnits.ToString("n");
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+          
+
+
+            //code to calculate the total miscellenouos fees
+            int misc = 0;
+
+            int exmbklt = Convert.ToInt32(ExamBookletFeeTextbox.Text);
+            int cisco = Convert.ToInt32(CiscoLabFeeTextbox.Text);
+            int comlab = Convert.ToInt32(LabFeesTextbox.Text);
+            misc += (exmbklt + cisco + comlab);
+
+            ExamBookletFeeTextbox.Text = exmbklt.ToString("n");
+            CiscoLabFeeTextbox.Text = cisco.ToString("n");
+            LabFeesTextbox.Text = comlab.ToString("n");
+
+            TotalMiscellanuousFeeTextbox.Text = misc.ToString("n");
+
+            //code to calculate the total tuition fees 
+            int totalTuitionfee = 0;
+            int tuitionPerUnit = 1700;
+
+            int totalTuitionfees = (TotalNoofUnits * tuitionPerUnit);
+
+            TotalNoUnitstextbox.Text = totalTuitionfee.ToString("n");
+            TotalTuitionandFeeTextbox.Text = totalTuitionfee.ToString();
+
+            //code to calculate the  Total Tuition and Fees 
+            
+            int totaltuitionandfee = (totalTuitionfee + misc);
+            TotalTuitionFeeTextbox.Text = totaltuitionandfee.ToString("n");
+
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
@@ -142,6 +201,7 @@ namespace Data_Structures_and_Algorithms
 
         private void textBox19_TextChanged(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -171,5 +231,28 @@ namespace Data_Structures_and_Algorithms
         }
 
         
+
+        private void CreditUnitsTextbox_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void TotalNoofUnitsTextbox2_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void TotalTuitionandFeeTextbox_TextChanged(object sender, EventArgs e)
+        {
+         
+
+        }
+
+        private void TotalMiscellanuousFeeTextbox_TextChanged(object sender, EventArgs e)
+        {
+          
+
+        }
     }
 }

@@ -29,26 +29,27 @@ namespace Data_Structures_and_Algorithms
             changetextbox.Enabled = false;
 
             //Codes for inserting picture or image inside the picturebox tool
-            pictureBox1.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\adobo.jpg");
-            pictureBox2.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\bbq.jpg");
-            pictureBox3.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\beef nilaga.jpg");
-            pictureBox4.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\giniling.jpg");
-            pictureBox5.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\kaldereta.jpg");
-            pictureBox6.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\lechon.jpg");
-            pictureBox7.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\mechado.jpg");
-            pictureBox8.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\menudo.png");
-            pictureBox9.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\monggo.jpg");
-            pictureBox10.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pinakbet.jpg");
-            pictureBox11.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pochero.jpg");
-            pictureBox12.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pork Siomai.jpg");
-            pictureBox13.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\shanghai.jpg");
-            pictureBox14.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\sinigang.jpg");
-            pictureBox15.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\sisig.jpg");
-            pictureBox16.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\sopas.jpg");
-            pictureBox17.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\tinola.jpg");
-            pictureBox18.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\kare kare.jpg");
-            pictureBox19.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\pancit.jpg");
-            pictureBox20.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\Bicol_Express.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\adobo.jpg");
+            pictureBox2.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\bbq.jpg");
+            pictureBox3.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\beef nilaga.jpg");
+            pictureBox4.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\giniling.jpg");
+            pictureBox5.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\kaldereta.jpg");
+            pictureBox6.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\lechon.jpg");
+            pictureBox7.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\mechado.jpg");
+            pictureBox8.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\menudo.png");
+            pictureBox9.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\monggo.jpg");
+            pictureBox10.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pinakbet.jpg");
+            pictureBox11.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pochero.jpg");
+            pictureBox12.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pork Siomai.jpg");
+            pictureBox13.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\shanghai.jpg");
+            pictureBox14.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\sinigang.jpg");
+            pictureBox15.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\sisig.jpg");
+            pictureBox16.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\sopas.jpg");
+            pictureBox17.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\tinola.jpg");
+            pictureBox18.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\kare kare.jpg");
+            pictureBox19.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\pancit.jpg");
+            pictureBox20.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\" +
+                "Images\\Bicol_Express.jpg");
 
             //codes for inserting or assigning a value to the text property of a label
             name1lbl.Text = "Adobo";

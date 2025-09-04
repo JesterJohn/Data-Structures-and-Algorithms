@@ -107,6 +107,7 @@
             this.CISCOLabFeeTextbox2 = new System.Windows.Forms.TextBox();
             this.TotalOtherschoolFeesTextbox = new System.Windows.Forms.TextBox();
             this.ExamBookletTextbox2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -500,6 +501,7 @@
             this.TotalTuitionandFeeTextbox.Name = "TotalTuitionandFeeTextbox";
             this.TotalTuitionandFeeTextbox.Size = new System.Drawing.Size(245, 23);
             this.TotalTuitionandFeeTextbox.TabIndex = 46;
+            this.TotalTuitionandFeeTextbox.TextChanged += new System.EventHandler(this.TotalTuitionandFeeTextbox_TextChanged);
             // 
             // label21
             // 
@@ -721,6 +723,7 @@
             this.CreditUnitsTextbox.Name = "CreditUnitsTextbox";
             this.CreditUnitsTextbox.Size = new System.Drawing.Size(245, 23);
             this.CreditUnitsTextbox.TabIndex = 33;
+            this.CreditUnitsTextbox.TextChanged += new System.EventHandler(this.CreditUnitsTextbox_TextChanged);
             // 
             // TotalNoUnitstextbox
             // 
@@ -758,6 +761,7 @@
             this.TotalMiscellanuousFeeTextbox.Name = "TotalMiscellanuousFeeTextbox";
             this.TotalMiscellanuousFeeTextbox.Size = new System.Drawing.Size(245, 23);
             this.TotalMiscellanuousFeeTextbox.TabIndex = 41;
+            this.TotalMiscellanuousFeeTextbox.TextChanged += new System.EventHandler(this.TotalMiscellanuousFeeTextbox_TextChanged);
             // 
             // NoListbox
             // 
@@ -867,6 +871,7 @@
             this.TotalNoofUnitsTextbox2.Name = "TotalNoofUnitsTextbox2";
             this.TotalNoofUnitsTextbox2.Size = new System.Drawing.Size(202, 23);
             this.TotalNoofUnitsTextbox2.TabIndex = 100;
+            this.TotalNoofUnitsTextbox2.TextChanged += new System.EventHandler(this.TotalNoofUnitsTextbox2_TextChanged);
             // 
             // TotalTuitionandFeestextbox2
             // 
@@ -913,12 +918,24 @@
             this.ExamBookletTextbox2.Size = new System.Drawing.Size(245, 23);
             this.ExamBookletTextbox2.TabIndex = 105;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(653, 104);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 40);
+            this.button1.TabIndex = 106;
+            this.button1.Text = "Calculate";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(789, 767);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ExamBookletTextbox2);
             this.Controls.Add(this.TotalOtherschoolFeesTextbox);
             this.Controls.Add(this.CISCOLabFeeTextbox2);
@@ -1089,5 +1106,6 @@
         private System.Windows.Forms.TextBox CISCOLabFeeTextbox2;
         private System.Windows.Forms.TextBox TotalOtherschoolFeesTextbox;
         private System.Windows.Forms.TextBox ExamBookletTextbox2;
+        private System.Windows.Forms.Button button1;
     }
 }
