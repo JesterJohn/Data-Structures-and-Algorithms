@@ -32,15 +32,18 @@ namespace Data_Structures_and_Algorithms
 
             //code for disabling the textboxes
             TotalNoUnitstextbox.Enabled = false;
+            TotalNoofUnitsTextbox2.Enabled = false;
             TotalTuitionFeeTextbox.Enabled = false;
+            TotalTuitionFeesTextbox2.Enabled = false;
             CreditUnitsTextbox.Enabled = false;
             TotalMiscellanuousFeeTextbox.Enabled = false;
+            TotalMiscellanouosFeesTextbox2.Enabled = false;
             TotalTuitionandFeeTextbox.Enabled = false;
-            TotalOtherschoolFeesTextbox.Enabled = false;
-
-            TotalNoofUnitsTextbox2.Enabled = false;
             TotalTuitionandFeestextbox2.Enabled = false;
-           
+            ComputerLabFeeTextbox2.Enabled = false;
+            CISCOLabFeeTextbox2.Enabled = false;
+            ExamBookletTextbox2.Enabled = false;
+            TotalOtherschoolFeesTextbox.Enabled = false;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -86,6 +89,25 @@ namespace Data_Structures_and_Algorithms
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            //code to calculate the credit units 
+            int unitlec, unitlab, creditUnits;
+            unitlec = Convert.ToInt32(UnitLectureTextbox.Text);
+            unitlab = Convert.ToInt32(UnitLabTextbox.Text);
+            creditUnits = (unitlec + unitlab);
+            TotalNoofUnits += creditUnits;
+            TotalNoUnitstextbox.Text = TotalNoofUnits.ToString();
+            TotalNoofUnitsTextbox2.Text = TotalNoofUnits.ToString();
+            CreditUnitsTextbox.Text = creditUnits.ToString();
+
+            string courseNumber = CourseNoTextbox.Text;
+            string courseCode = CourseCodeTextbox.Text; 
+            string courseDescription = CourseDescTextbox.Text;
+            string unitLecture = UnitLectureTextbox.Text;
+            string unitLab = UnitLabTextbox.Text;
+            string creditUnit = CreditUnitsTextbox.Text;
+            string time = TimeTextbox.Text;
+            string day = DayTextbox.Text;
+
             //Codes for submit button to add all the data in the listboxes 
             NoListbox.Items.Add(CourseNoTextbox.Text);
             CourseCodeListbox.Items.Add(CourseCodeTextbox.Text);
@@ -103,55 +125,32 @@ namespace Data_Structures_and_Algorithms
             ComputerLabFeeTextbox2.Text = LabFeesTextbox.Text;
             CISCOLabFeeTextbox2.Text = CiscoLabFeeTextbox.Text;
             ExamBookletTextbox2.Text = ExamBookletFeeTextbox.Text;
-
-            //code to calculate the credit units 
-            int creditUnits;
-
-            int lec = Convert.ToInt32(UnitLectureTextbox.Text);
-            int lab = Convert.ToInt32(UnitLabTextbox.Text);
-            creditUnits = (lec + lab);
-
-            UnitLectureTextbox.Text = lec.ToString("n");
-            UnitLabTextbox.Text = lab.ToString("n");
-
-            CreditUnitsTextbox.Text = creditUnits.ToString();
-
-            TotalNoofUnits += creditUnits;
-            TotalNoUnitstextbox.Text = TotalNoofUnits.ToString("n");
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-          
+            double totalTuitionFee, totalMiscellaneousFee, totalTuitionAndFee, ciscFee, exmbkltFee, labFee;
 
+            labFee = Convert.ToDouble(LabFeesTextbox.Text);
+            ciscFee = Convert.ToDouble(CiscoLabFeeTextbox.Text);
+            exmbkltFee = Convert.ToDouble(ExamBookletFeeTextbox.Text);
 
-            //code to calculate the total miscellenouos fees
-            int misc = 0;
+            totalTuitionFee = TotalNoofUnits * 1700;
+            totalMiscellaneousFee = labFee + ciscFee + exmbkltFee;
+            totalTuitionAndFee = totalTuitionFee + totalMiscellaneousFee;
 
-            int exmbklt = Convert.ToInt32(ExamBookletFeeTextbox.Text);
-            int cisco = Convert.ToInt32(CiscoLabFeeTextbox.Text);
-            int comlab = Convert.ToInt32(LabFeesTextbox.Text);
-            misc += (exmbklt + cisco + comlab);
+            TotalTuitionFeeTextbox.Text = totalTuitionFee.ToString("n");
+            TotalMiscellanuousFeeTextbox.Text = totalMiscellaneousFee.ToString("n");
+            TotalTuitionandFeeTextbox.Text = totalTuitionAndFee.ToString("n");
+            LabFeesTextbox.Text = labFee.ToString("n");
+            CiscoLabFeeTextbox.Text = ciscFee.ToString("n");
+            ExamBookletFeeTextbox.Text = exmbkltFee.ToString("n");
 
-            ExamBookletFeeTextbox.Text = exmbklt.ToString("n");
-            CiscoLabFeeTextbox.Text = cisco.ToString("n");
-            LabFeesTextbox.Text = comlab.ToString("n");
-
-            TotalMiscellanuousFeeTextbox.Text = misc.ToString("n");
-
-            //code to calculate the total tuition fees 
-            int totalTuitionfee = 0;
-            int tuitionPerUnit = 1700;
-
-            int totalTuitionfees = (TotalNoofUnits * tuitionPerUnit);
-
-            TotalNoUnitstextbox.Text = totalTuitionfee.ToString("n");
-            TotalTuitionandFeeTextbox.Text = totalTuitionfee.ToString();
-
-            //code to calculate the  Total Tuition and Fees 
-            
-            int totaltuitionandfee = (totalTuitionfee + misc);
-            TotalTuitionFeeTextbox.Text = totaltuitionandfee.ToString("n");
-
+            TotalTuitionandFeestextbox2.Text = TotalTuitionandFeeTextbox.Text;
+            TotalMiscellanouosFeesTextbox2.Text = TotalMiscellanuousFeeTextbox.Text;
+            TotalTuitionFeesTextbox2.Text = TotalTuitionFeeTextbox.Text;
+            LabFeesTextbox.Text = ComputerLabFeeTextbox2.Text; 
+            CISCOLabFeeTextbox2.Text = CiscoLabFeeTextbox.Text;
+            ExamBookletTextbox2.Text = ExamBookletFeeTextbox.Text;
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
