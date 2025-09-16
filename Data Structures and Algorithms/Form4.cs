@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -86,9 +87,12 @@ namespace Data_Structures_and_Algorithms
             CISCOLabFeeTextbox2.Clear();
             ExamBookletTextbox2.Clear();
 
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
+           
+
             //code to calculate the credit units 
             int unitlec, unitlab, creditUnits;
             unitlec = Convert.ToInt32(UnitLectureTextbox.Text);
@@ -125,6 +129,10 @@ namespace Data_Structures_and_Algorithms
             ComputerLabFeeTextbox2.Text = LabFeesTextbox.Text;
             CISCOLabFeeTextbox2.Text = CiscoLabFeeTextbox.Text;
             ExamBookletTextbox2.Text = ExamBookletFeeTextbox.Text;
+
+            
+
+
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -152,7 +160,23 @@ namespace Data_Structures_and_Algorithms
             CISCOLabFeeTextbox2.Text = CiscoLabFeeTextbox.Text;
             ExamBookletTextbox2.Text = ExamBookletFeeTextbox.Text;
         }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form5 print = new Form5();
+            print.DisplayNoListbox.Items.AddRange(this.NoListbox.Items);
+            print.DisplayCourseCodeListbox.Items.AddRange(this.CourseCodeListbox.Items);
+            print.DisplayCourseDescListbox.Items.AddRange(this.CourseDescListbox.Items);
+            print.DisplayUnitLecListbox.Items.AddRange(this.UnitLecListbox.Items);
+            print.DisplayUnitLabListbox.Items.AddRange(this.UnitLabListbox.Items);
+            print.DisplayCreditUnitsListbox.Items.AddRange(this.CreditUnitsListbox.Items);
+            print.DisplayTimeListbox.Items.AddRange(this.TimeListbox.Items);
+            print.DisplayDayListbox.Items.AddRange(this.DayListbox.Items);
 
+            
+
+            print.Show();
+
+        }
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
 
@@ -253,5 +277,7 @@ namespace Data_Structures_and_Algorithms
           
 
         }
+
+        
     }
 }

@@ -15,6 +15,13 @@ namespace Data_Structures_and_Algorithms
         public Form5()
         {
             InitializeComponent();
+            
+            
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
