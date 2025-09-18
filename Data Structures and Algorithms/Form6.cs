@@ -19,6 +19,7 @@ namespace Data_Structures_and_Algorithms
 
         private void PrelimExam_Lesson5Activity_Load(object sender, EventArgs e)
         {
+            //code to disable the textbpxes 
             bi_incometextbox.Enabled = false;
             hi_incometextbox.Enabled = false;
             oi_incometextbox.Enabled = false;
@@ -41,6 +42,7 @@ namespace Data_Structures_and_Algorithms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //code for initialization of variables 
             double bi_rate_per_hr, bi_no_of_hrs, hi_rate_per_hr, hi_no_of_hrs, oi_rate_per_hr, oi_no_of_hrs, basic_income, honorarium, other_income, gross_income,incometaxcontrib;
             bi_rate_per_hr = Convert.ToDouble(bi_rate_per_hr_textbox.Text);
             bi_no_of_hrs = Convert.ToDouble(bi_no_of_hrs_textbox.Text);
@@ -50,20 +52,20 @@ namespace Data_Structures_and_Algorithms
             oi_no_of_hrs = Convert.ToDouble(oi_no_of_hrs_textbox.Text);
             pagibig_contribtextbox.Text = "200";
 
-
+            //code for calculation
             basic_income = bi_rate_per_hr * bi_no_of_hrs;
             honorarium = hi_rate_per_hr * hi_no_of_hrs;
             other_income = oi_rate_per_hr * oi_no_of_hrs;
             gross_income = basic_income + honorarium + other_income;
 
-
+            //
             bi_incometextbox.Text = basic_income.ToString("n");
             hi_incometextbox.Text = honorarium.ToString("n");
             oi_incometextbox.Text = other_income.ToString("n");
             gross_incometextbox.Text = gross_income.ToString("n");
 
 
-            // SSS Contribution based on the gross income
+            // code for the condition for SSS Contribution based on the gross income
             if (gross_income < 5250)
             {
                 sss_contribtextbox.Text = "510";
@@ -307,7 +309,7 @@ namespace Data_Structures_and_Algorithms
             else
                 sss_contribtextbox.Text = "3530";
 
-            //PHILHealth Contribution based on the gross income 
+            //code for condition of PHILHealth Contribution based on the gross income 
 
             if (gross_income < 5250)
             {
@@ -552,32 +554,32 @@ namespace Data_Structures_and_Algorithms
             else
                 philhealth_contribtextbox.Text = "1750";
 
-            // Income Tax Contribution based on the gross income
+            // code for contition of Income Tax Contribution based on the gross income
 
 
-            if (gross_income < 250000)
+            if (gross_income < (250000/12))
             {
                 incometaxcontrib = 0.00;
             }
-            else if (gross_income > 250000 && gross_income < 400000)
+            else if (gross_income > (250000/12) && gross_income < (400000/12))
             {
                 incometaxcontrib = (gross_income * 0.15);
             }
-            else if (gross_income > 40000 && gross_income < 800000)
+            else if (gross_income > (400000 / 12) && gross_income < (800000 / 12))
             {
                 incometaxcontrib = (gross_income - 250000) * 0.20;
             }
-            else if (gross_income > 800000 && gross_income < 2000000)
+            else if (gross_income > (800000 / 12) && gross_income < (2000000 / 12))
             {
                 incometaxcontrib = (gross_income - 400000) * 0.25;
             }
-            else if (gross_income > 2000000 && gross_income < 8000000)
+            else if (gross_income > (2000000 / 12) && gross_income < (8000000 / 12))
             {
                 incometaxcontrib = (gross_income - 2000000) * 0.30;
             }
             else
             {
-                incometaxcontrib = (gross_income - 8000000) * 0.35;
+                incometaxcontrib = (gross_income - (8000000 / 12)) * 0.35;
             }
             incometax_contribtextbox.Text = incometaxcontrib.ToString("n");
         } 
@@ -585,6 +587,7 @@ namespace Data_Structures_and_Algorithms
 
         private void button2_Click(object sender, EventArgs e)
                 {
+                    // code for initializing the variables 
                     double sss_contrib, philhealth_contrib, pagibig_contrib, incometax_contrib;
                     double sss_loan, pagibig_loan, savings_deposit, savings_loan, salary_loan, other_loan;
                     double total_deduction, net_income, gross_income;
@@ -602,6 +605,7 @@ namespace Data_Structures_and_Algorithms
                     other_loan = Convert.ToDouble(other_loantextbox.Text);
                     gross_income = Convert.ToDouble(gross_incometextbox.Text);
 
+                    // code for the formulas 
                     total_deduction = sss_contrib + philhealth_contrib + pagibig_contrib + incometax_contrib + sss_loan + pagibig_loan + savings_deposit + savings_loan + salary_loan + other_loan;
                     net_income = gross_income - total_deduction;
 
@@ -612,6 +616,7 @@ namespace Data_Structures_and_Algorithms
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //code to clear all the textboxes 
             empno_textbox.Clear();
             department_textbox.Clear();
             firstname_textbox.Clear();
@@ -619,7 +624,6 @@ namespace Data_Structures_and_Algorithms
             surname_textbox.Clear();    
             civilstatus_textbox.Clear();
             QDS_textbox.Clear();
-            paydate_textbox.Clear();
             empstatus_textbox.Clear();
             designation_textbox.Clear();
 
@@ -653,6 +657,7 @@ namespace Data_Structures_and_Algorithms
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // codes to transfer all the data from one form to another form
             Savebtn print = new Savebtn();
 
             print.dis_basicdaytextbox.Text = bi_no_of_hrs_textbox.Text;
@@ -675,21 +680,26 @@ namespace Data_Structures_and_Algorithms
             print.dis_nonsubtextbox.Text = "0.00";
             print.dis_nontardytextbox.Text = "0.00";
 
-
+            print.dis_departmenttextbox.Text = department_textbox.Text;
             print.dis_empcodetextbox.Text = empno_textbox.Text;
             print.dis_empnametextbox.Text = surname_textbox.Text + ", " + firstname_textbox.Text + " " + middlename_textbox.Text;
-            print.dis_cutofftextbox.Text = paydate_textbox.Text;
-            print.dis_payperiodtextbox.Text = paydate_textbox.Text;
+            print.dis_cutofftextbox.Text = dateTimePicker1.Value.ToString("MMMM dd,yyyy");
+            print.dis_payperiodtextbox.Text = dateTimePicker1.Value.ToString("MMMM dd,yyyy");
 
+            print.dis_withholdingtaxtextbox.Text = incometax_contribtextbox.Text;
             print.dis_ssscontribtextbox.Text = sss_contribtextbox.Text;
+            print.dis_hdmfcontribtextbox.Text = pagibig_contribtextbox.Text;
             print.dis_philhealthcontribtextbox.Text = philhealth_contribtextbox.Text;
             print.dis_wispcontribtextbox.Text = "750.00";
 
             print.dis_earningstextbox.Text = gross_incometextbox.Text;
-            
-
             print.dis_deductiontextbox.Text = total_deductiontextbox.Text;
+            print.display_overtimetexbox.Text = oi_incometextbox.Text;
+
+            print.dis_grossearningstextbox.Text = gross_incometextbox.Text;
+            print.dis2_deductiontexbox.Text = total_deductiontextbox.Text;
             print.dis_netpaytextbox.Text = net_incometextbox.Text;
+
 
 
             print.Show();
