@@ -49,5 +49,19 @@ namespace Data_Structures_and_Algorithms
             
 
         }
+
+        private void pOS4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 pos4 = new Form3();
+            pos4.MdiParent = this;
+            pos4.Show();
+        }
+
+        private void pOS5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 pos5 = new Form4();
+            pos5.MdiParent = this;
+            pos5.Show();
+        }
     }
 }

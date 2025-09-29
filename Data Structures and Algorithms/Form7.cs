@@ -32,7 +32,7 @@ namespace Data_Structures_and_Algorithms
                 usernametextbox.Clear();
                 passwordtextbox.Clear();
             }
-            else if (usernametextbox.Text == "Cashier 1" && passwordtextbox.Text == "12345")
+            else if (usernametextbox.Text == "Cashier 1" && passwordtextbox.Text == "cash1")
                 {
                 MessageBox.Show("Welcome Cashier 1!");
                 Form1 form1 = new Form1();
@@ -40,7 +40,7 @@ namespace Data_Structures_and_Algorithms
                 usernametextbox.Clear();
                 passwordtextbox.Clear();
             }
-            else if (usernametextbox.Text == "Cashier 2" && passwordtextbox.Text == "54321")
+            else if (usernametextbox.Text == "Cashier 2" && passwordtextbox.Text == "cash2")
             {
                 MessageBox.Show("Welcome Cashier 2!");
                 Form2 form2 = new Form2();
@@ -53,6 +53,22 @@ namespace Data_Structures_and_Algorithms
                 MessageBox.Show("Welcome Payroll!");
                 PrelimExam_Lesson5Activity prelimExam_Lesson5Activity = new PrelimExam_Lesson5Activity();
                 prelimExam_Lesson5Activity.Show();
+                usernametextbox.Clear();
+                passwordtextbox.Clear();
+            }
+            else if (usernametextbox.Text == "Cashier 3" && passwordtextbox.Text == "cash3")
+            {
+                MessageBox.Show("Welcome Cashier 3!");
+                Form3 form3 = new Form3();
+                form3.Show();
+                usernametextbox.Clear();
+                passwordtextbox.Clear();
+            }
+            else if (usernametextbox.Text == "Enrollment" && passwordtextbox.Text == "enroll123")
+            {
+                MessageBox.Show("Welcome Enrollment!");
+                Form4 form4 = new Form4();
+                form4.Show();
                 usernametextbox.Clear();
                 passwordtextbox.Clear();
             }
@@ -70,6 +86,11 @@ namespace Data_Structures_and_Algorithms
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

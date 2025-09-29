@@ -42,6 +42,8 @@
             this.B_ChickenCheckBox = new System.Windows.Forms.CheckBox();
             this.B_HaloHaloCheckBox = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.foodRdbtn = new System.Windows.Forms.RadioButton();
+            this.foodARdbtn = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.DiscountTextbox = new System.Windows.Forms.TextBox();
@@ -52,8 +54,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.DisplayPictureBox = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.foodRdbtn = new System.Windows.Forms.RadioButton();
-            this.foodARdbtn = new System.Windows.Forms.RadioButton();
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -223,6 +223,32 @@
             this.groupBox1.Text = "Food Order Choices";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // foodRdbtn
+            // 
+            this.foodRdbtn.AutoSize = true;
+            this.foodRdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodRdbtn.Location = new System.Drawing.Point(154, 66);
+            this.foodRdbtn.Name = "foodRdbtn";
+            this.foodRdbtn.Size = new System.Drawing.Size(191, 29);
+            this.foodRdbtn.TabIndex = 7;
+            this.foodRdbtn.TabStop = true;
+            this.foodRdbtn.Text = "Food Bundles A";
+            this.foodRdbtn.UseVisualStyleBackColor = true;
+            this.foodRdbtn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // foodARdbtn
+            // 
+            this.foodARdbtn.AutoSize = true;
+            this.foodARdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodARdbtn.Location = new System.Drawing.Point(154, 128);
+            this.foodARdbtn.Name = "foodARdbtn";
+            this.foodARdbtn.Size = new System.Drawing.Size(190, 29);
+            this.foodARdbtn.TabIndex = 8;
+            this.foodARdbtn.TabStop = true;
+            this.foodARdbtn.Text = "Food Bundles B";
+            this.foodARdbtn.UseVisualStyleBackColor = true;
+            this.foodARdbtn.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label5);
@@ -322,32 +348,6 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Order Image";
             // 
-            // foodRdbtn
-            // 
-            this.foodRdbtn.AutoSize = true;
-            this.foodRdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.foodRdbtn.Location = new System.Drawing.Point(154, 66);
-            this.foodRdbtn.Name = "foodRdbtn";
-            this.foodRdbtn.Size = new System.Drawing.Size(191, 29);
-            this.foodRdbtn.TabIndex = 7;
-            this.foodRdbtn.TabStop = true;
-            this.foodRdbtn.Text = "Food Bundles A";
-            this.foodRdbtn.UseVisualStyleBackColor = true;
-            this.foodRdbtn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // foodARdbtn
-            // 
-            this.foodARdbtn.AutoSize = true;
-            this.foodARdbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.foodARdbtn.Location = new System.Drawing.Point(154, 128);
-            this.foodARdbtn.Name = "foodARdbtn";
-            this.foodARdbtn.Size = new System.Drawing.Size(190, 29);
-            this.foodARdbtn.TabIndex = 8;
-            this.foodARdbtn.TabStop = true;
-            this.foodARdbtn.Text = "Food Bundles B";
-            this.foodARdbtn.UseVisualStyleBackColor = true;
-            this.foodARdbtn.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -359,6 +359,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.IsMdiContainer = true;
             this.Name = "Form3";
             this.Text = "EXAMPLE 4 ";
             this.Load += new System.EventHandler(this.Form3_Load);
