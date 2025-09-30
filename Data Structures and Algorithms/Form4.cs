@@ -146,6 +146,7 @@ namespace Data_Structures_and_Algorithms
             totalMiscellaneousFee = labFee + ciscFee + exmbkltFee;
             totalTuitionAndFee = totalTuitionFee + totalMiscellaneousFee;
 
+
             TotalTuitionFeeTextbox.Text = totalTuitionFee.ToString("n");
             TotalMiscellanuousFeeTextbox.Text = totalMiscellaneousFee.ToString("n");
             TotalTuitionandFeeTextbox.Text = totalTuitionAndFee.ToString("n");
@@ -172,7 +173,24 @@ namespace Data_Structures_and_Algorithms
             print.DisplayTimeListbox.Items.AddRange(this.TimeListbox.Items);
             print.DisplayDayListbox.Items.AddRange(this.DayListbox.Items);
 
-            
+            print.DisplayCourseNoTextbox.Text = CourseNoTextbox.Text;
+            print.DisplayCourseCodeTextbox.Text = CourseCodeTextbox.Text;
+            print.DisplayCourseDescTextbox.Text = CourseDescTextbox.Text;
+            print.DisplayUnitLectureTextbox.Text = UnitLectureTextbox.Text;
+            print.DisplayUnitLabTextbox.Text = UnitLabTextbox.Text;
+            print.DisplayTimeTextbox.Text = TimeTextbox.Text;
+            print.DisplayDayTextbox.Text = DayTextbox.Text;
+            print.DisplayCreditUnitsTextbox.Text = CreditUnitsTextbox.Text;
+            print.DisplayTotalNoUnitstextbox.Text = TotalNoUnitstextbox.Text;
+            print.DisplayLabFeesTextbox.Text = LabFeesTextbox.Text;
+            print.DisplayTotalTuitionFeeTextbox.Text = TotalTuitionFeeTextbox.Text; 
+            print.DisplayTotalMiscellanuousFeeTextbox.Text = TotalMiscellanuousFeeTextbox.Text;
+            print.DisplayCiscoLabFeeTextbox.Text = CiscoLabFeeTextbox.Text;
+            print.DisplayExamBookletFeeTextbox.Text = ExamBookletFeeTextbox.Text;
+            print.DisplayTotalTuitionandFeeTextbox.Text = TotalTuitionandFeeTextbox.Text;
+
+
+
 
             print.Show();
 

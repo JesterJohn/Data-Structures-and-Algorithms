@@ -25,22 +25,22 @@ namespace Data_Structures_and_Algorithms
 
         private void pOS1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 pos1 = new Form1();
-            pos1.MdiParent = this;
-            pos1.Show();
+            Form1 cash1 = new Form1();
+            cash1.MdiParent = this;
+            cash1.Show();
         }
 
         private void pOS2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 pos2 = new Form2();
-            pos2.MdiParent = this;
-            pos2.Show();
+            Form2 cash2 = new Form2();
+            cash2.MdiParent = this;
+            cash2.Show();
         }
         private void pOS3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PrelimExam_Lesson5Activity pos3 = new PrelimExam_Lesson5Activity();
-            pos3.MdiParent = this;
-            pos3.Show();
+            Form3 cash3 = new Form3();
+            cash3.MdiParent = this;
+            cash3.Show();
 
         }
 
@@ -50,18 +50,18 @@ namespace Data_Structures_and_Algorithms
 
         }
 
-        private void pOS4ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void studentEnrollmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 pos4 = new Form3();
-            pos4.MdiParent = this;
-            pos4.Show();
+            Form4 student = new Form4();
+            student.MdiParent = this;
+            student.Show();
         }
 
-        private void pOS5ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void payrollToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form4 pos5 = new Form4();
-            pos5.MdiParent = this;
-            pos5.Show();
+            PrelimExam_Lesson5Activity payroll = new PrelimExam_Lesson5Activity();
+            payroll.MdiParent = this;
+            payroll.Show();
         }
     }
 }

@@ -909,6 +909,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PrelimExam_Lesson5Activity";
             this.Text = "PrelimExam_Lesson5Activity";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PrelimExam_Lesson5Activity_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -44,7 +44,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.TotalTuitionandFeeTextbox = new System.Windows.Forms.TextBox();
+            this.DisplayTotalTuitionandFeeTextbox = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.DisplayExamBookletFeeTextbox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -236,14 +236,14 @@
             this.label22.TabIndex = 151;
             this.label22.Text = "#";
             // 
-            // TotalTuitionandFeeTextbox
+            // DisplayTotalTuitionandFeeTextbox
             // 
-            this.TotalTuitionandFeeTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalTuitionandFeeTextbox.Location = new System.Drawing.Point(545, 184);
-            this.TotalTuitionandFeeTextbox.Margin = new System.Windows.Forms.Padding(2);
-            this.TotalTuitionandFeeTextbox.Name = "TotalTuitionandFeeTextbox";
-            this.TotalTuitionandFeeTextbox.Size = new System.Drawing.Size(245, 23);
-            this.TotalTuitionandFeeTextbox.TabIndex = 150;
+            this.DisplayTotalTuitionandFeeTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayTotalTuitionandFeeTextbox.Location = new System.Drawing.Point(545, 184);
+            this.DisplayTotalTuitionandFeeTextbox.Margin = new System.Windows.Forms.Padding(2);
+            this.DisplayTotalTuitionandFeeTextbox.Name = "DisplayTotalTuitionandFeeTextbox";
+            this.DisplayTotalTuitionandFeeTextbox.Size = new System.Drawing.Size(245, 23);
+            this.DisplayTotalTuitionandFeeTextbox.TabIndex = 150;
             // 
             // label21
             // 
@@ -557,7 +557,7 @@
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.TotalTuitionandFeeTextbox);
+            this.Controls.Add(this.DisplayTotalTuitionandFeeTextbox);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.DisplayExamBookletFeeTextbox);
             this.Controls.Add(this.label13);
@@ -630,7 +630,7 @@
         public System.Windows.Forms.TextBox DisplayCourseCodeTextbox;
         public System.Windows.Forms.TextBox DisplayCourseNoTextbox;
         public System.Windows.Forms.TextBox DisplayCourseDescTextbox;
-        public System.Windows.Forms.TextBox TotalTuitionandFeeTextbox;
+        public System.Windows.Forms.TextBox DisplayTotalTuitionandFeeTextbox;
         public System.Windows.Forms.TextBox DisplayExamBookletFeeTextbox;
         public System.Windows.Forms.TextBox DisplayCiscoLabFeeTextbox;
         public System.Windows.Forms.TextBox DisplayTotalMiscellanuousFeeTextbox;
