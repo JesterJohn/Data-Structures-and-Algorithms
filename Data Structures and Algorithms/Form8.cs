@@ -203,8 +203,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "550.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "550.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox2.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -214,8 +214,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "600.99";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "600.99";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox3.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -225,8 +225,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "700.50";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "700.50";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox4.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -236,8 +236,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "500.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "500.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox5.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -247,8 +247,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "750.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "750.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox6.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -258,8 +258,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "700.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "700.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox7.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -269,8 +269,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "850.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "850.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox8.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -280,8 +280,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "450.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "450.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox9.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -291,8 +291,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "650.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "650.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox10.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -302,8 +302,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox11.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -313,8 +313,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox12_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox12.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -324,8 +324,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox13.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -335,8 +335,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox14_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox14.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -346,8 +346,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox15_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox15.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -357,8 +357,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox16_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox16.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -368,8 +368,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox17_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox17.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -379,8 +379,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox18_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox18.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -390,8 +390,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox19_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox19.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
@@ -401,8 +401,8 @@ namespace Data_Structures_and_Algorithms
         private void checkBox20_CheckedChanged(object sender, EventArgs e)
         {
             double price;
-            discounttextbox.Text = "575.00";
-            pricetextbox.Text = "0.00";
+            pricetextbox.Text = "575.00";
+            discounttextbox.Text = "0.00";
             price = Convert.ToDouble(pricetextbox.Text);
             displaylistbox.Items.Add(checkBox20.Text + " " + pricetextbox.Text);
             qtytextbox.Text = "0";
