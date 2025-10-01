@@ -63,5 +63,10 @@ namespace Data_Structures_and_Algorithms
             payroll.MdiParent = this;
             payroll.Show();
         }
+
+        private void accountingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

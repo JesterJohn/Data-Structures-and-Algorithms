@@ -117,5 +117,10 @@ namespace Data_Structures_and_Algorithms
         {
             this.Close();
         }
+
+        private void A_FriedChickenCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
