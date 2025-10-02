@@ -64,6 +64,14 @@ namespace Data_Structures_and_Algorithms
                 usernametextbox.Clear();
                 passwordtextbox.Clear();
             }
+            else if (usernametextbox.Text == "Cashier 4" && passwordtextbox.Text == "cash4")
+            {
+                MessageBox.Show("Welcome Cashier 4!");
+                Form8 form8 = new Form8();
+                form8.Show();
+                usernametextbox.Clear();
+                passwordtextbox.Clear();
+            }
             else if (usernametextbox.Text == "Enrollment" && passwordtextbox.Text == "enroll123")
             {
                 MessageBox.Show("Welcome Enrollment!");

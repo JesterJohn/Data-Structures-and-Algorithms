@@ -68,5 +68,27 @@ namespace Data_Structures_and_Algorithms
         {
 
         }
+
+        private void cashier4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form8 cash4 = new Form8();
+            cash4.MdiParent = this;
+            cash4.Show();
+        }
+
+        private void tileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void tileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.Cascade);
+        }
     }
 }

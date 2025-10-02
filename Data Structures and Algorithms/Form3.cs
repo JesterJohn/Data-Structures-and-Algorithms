@@ -38,7 +38,7 @@ namespace Data_Structures_and_Algorithms
             this.BackColor = Color.Red;
             
             //inserting image inside the picturebox
-            DisplayPictureBox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\Food Bundles A.jpg");
+            DisplayPictureBox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle A.jpg");
 
             //codes to check the checkboxes 
             A_CokeCheckBox.Checked = true;
@@ -66,7 +66,7 @@ namespace Data_Structures_and_Algorithms
             this.BackColor = Color.Red;
          
             //inserting image inside the picturebox
-            DisplayPictureBox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\Food Bundles B.jpg");
+            DisplayPictureBox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle B.jpg");
 
             //codes to check the checkboxes
             B_CarbonaraCheckBox.Checked = true;
@@ -94,7 +94,7 @@ namespace Data_Structures_and_Algorithms
             foodRdbtn.Checked = false;
 
             //codes for inserting default images inside the picturebox 
-            DisplayPictureBox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\Default.jpg");
+            DisplayPictureBox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
 
             //codes to uncheck all the checkboxes 
             A_CokeCheckBox.Checked = false;
