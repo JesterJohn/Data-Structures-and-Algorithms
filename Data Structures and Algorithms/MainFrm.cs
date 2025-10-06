@@ -90,5 +90,12 @@ namespace Data_Structures_and_Algorithms
         {
             this.LayoutMdi(MdiLayout.Cascade);
         }
+
+        private void employeePayslipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form9 payslip = new Form9();
+            payslip.MdiParent = this;
+            payslip.Show();
+        }
     }
 }

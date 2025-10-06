@@ -80,6 +80,14 @@ namespace Data_Structures_and_Algorithms
                 usernametextbox.Clear();
                 passwordtextbox.Clear();
             }
+            else if (usernametextbox.Text == "Payslip" && passwordtextbox.Text == "payslip123")
+            {
+                MessageBox.Show("Welcome to Payslip!");
+                Form9 form9 = new Form9();
+                form9.Show();
+                usernametextbox.Clear();
+                passwordtextbox.Clear();
+            }
             else
             {
                 MessageBox.Show("Invalid username or password. Please try again.");
