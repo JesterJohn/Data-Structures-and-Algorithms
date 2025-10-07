@@ -13,7 +13,7 @@ namespace Data_Structures_and_Algorithms
     public partial class POS3_FunctionFrm : Form
     {
         private double total_amount = 0;
-        private int  total_quantity = 0;
+        private int  total_qty = 0;
 
         public POS3_FunctionFrm()
         {
@@ -21,7 +21,7 @@ namespace Data_Structures_and_Algorithms
         }
         private void quantity_textbox()
         {
-            qtytextbox.Clear();
+            qtytextbox.Text = "0";
             qtytextbox.Focus();
         }
         private void item_priceValue(string discount_amt, string price)
@@ -405,6 +405,21 @@ namespace Data_Structures_and_Algorithms
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void qtytextbox_TextChanged(object sender, EventArgs e)
+        {
+            double price, discount_amt, discounted_amt;
+            int qty;
+            price = Convert.ToDouble(pricetextbox.Text);
+            qty = Convert.ToInt32(qtytextbox.Text);
+            discount_amt = Convert.ToDouble(discounttextbox.Text);
+            discounted_amt = (price * qty) - discount_amt;
+            total_qty += qty;
+            totalqtytextbox.Text = total_qty.ToString();
+            total_amount += discounted_amt;
+            totalbillstextbox.Text = total_amount.ToString("n");
+            discountedtextbox.Text = discounted_amt.ToString("n");
         }
     }
 }

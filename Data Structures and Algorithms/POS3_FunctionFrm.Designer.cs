@@ -871,6 +871,7 @@
             this.qtytextbox.Name = "qtytextbox";
             this.qtytextbox.Size = new System.Drawing.Size(108, 24);
             this.qtytextbox.TabIndex = 52;
+            this.qtytextbox.TextChanged += new System.EventHandler(this.qtytextbox_TextChanged);
             // 
             // groupBox3
             // 
