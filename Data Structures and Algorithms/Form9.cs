@@ -32,6 +32,21 @@ namespace Data_Structures_and_Algorithms
             philhealth_contrib = 0.00,
             tax_contrib = 0.00;
 
+        private void grossincometextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bi_rate_per_hr_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bi_incometextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private Double sss_loan = 0.00,
             pagibig_loan = 0.00,
             salary_loan = 0.00,

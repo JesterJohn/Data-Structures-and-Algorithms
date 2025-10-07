@@ -13,19 +13,29 @@ namespace Data_Structures_and_Algorithms
 {
     public partial class POS2_FuntionFrm : Form
     {
+
+        int qty, qty_total;
+        double price, discount_amt, discounted_amt, discount_totalgiven, discounted_total;
+        
+        public POS2_FuntionFrm()
+        {
+            InitializeComponent();
+        }
         private void quantitytextbox()
         {
-            quantitytextbox.Clear();
-            quantitytextbox.Focus();
+            quantityTextbox.Clear();
+            quantityTextbox.Focus();
         }
         private void quantity_price_Convert()
         {
-            double quantity, price;
-            quantity = Convert.ToInt32(quantitytextbox.Text);
+            
+            qty = Convert.ToInt32(quantityTextbox.Text);
             price = Convert.ToDouble(pricetextbox.Text);
         }
         private void computation_Formula_and_DisplayData()
         {
+
+            discounted_amt = (qty * price) - discount_amt;
             discounttextbox.Text = discount_amt.ToString("n");
             discountedtextbox.Text = discounted_amt.ToString("n");
         }
@@ -34,14 +44,19 @@ namespace Data_Structures_and_Algorithms
             itemnametextbox.Text = itemname;
             pricetextbox.Text = price;
         }
-        public POS2_FuntionFrm()
-        {
-            InitializeComponent();
-        }
 
         private void POS2_FuntionFrm_Load(object sender, EventArgs e)
         {
+            // Codes for disabling the textboxes 
+            itemnametextbox.Enabled = false;
+            pricetextbox.Enabled = false;
+            discountedtextbox.Enabled = false;
+            qty_totaltextbox.Enabled = false;
+            discount_totaltextbox.Enabled = false;
+            discounted_totaltextbox.Enabled = false;
+            changetextbox.Enabled = false;
 
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -168,8 +183,7 @@ namespace Data_Structures_and_Algorithms
         private void seniocitizenRdbtn_CheckedChanged(object sender, EventArgs e)
         {
             try
-        }
-        {
+            {
                 quantity_price_Convert();
                 discount_amt = (qty * price) * 0.30;
                 computation_Formula_and_DisplayData();
@@ -178,7 +192,7 @@ namespace Data_Structures_and_Algorithms
                 nodiscRdbtn.Checked = false;
 
             }
-        catch(Exception);
+            catch (Exception)
             {
                 MessageBox.Show("Input is Invalid");
                 quantitytextbox();
@@ -188,53 +202,116 @@ namespace Data_Structures_and_Algorithms
         private void regularRdbtn_CheckedChanged(object sender, EventArgs e)
         {
             try
-        }
-            quantity_price_Convert();
-            discount_amt = (qty * price) * 0.30;
-            conputation_Formula_and_DisplayData();
-            seniocitizenRdbtn.Checked = false;
-            EmployeeRdbtn.Checked = false;
-            nodiscRdbtn.Checked = false;
-        }
-        catch(Exception)
-        {
+            {
+                quantity_price_Convert();
+                discount_amt = (qty * price) * 0.30;
+                computation_Formula_and_DisplayData();
+                seniocitizenRdbtn.Checked = false;
+                EmployeeRdbtn.Checked = false;
+                nodiscRdbtn.Checked = false;
+
+            }
+            catch (Exception)
+            {
                 MessageBox.Show("Input is Invalid");
                 quantitytextbox();
+            }
+        }
 
         private void EmployeeRdbtn_CheckedChanged(object sender, EventArgs e)
         {
             try
-        }
-            quantity_price_Convert();
-            discount_amt = (qty * price) * 0.15;
-            conputation_Formula_and_DisplayData();
-            seniocitizenRdbtn.Checked = false;
-            regularRdbtn.Checked = false;
-            nodiscRdbtn.Checked = false;
-        }
-        catch(Exception)
-        {
-                MessageBox.Show("Input is Invalid in Quantity");
+            {
+                quantity_price_Convert();
+                discount_amt = (qty * price) * 0.15;
+                computation_Formula_and_DisplayData();
+                regularRdbtn.Checked = false;
+                EmployeeRdbtn.Checked = false;
+                nodiscRdbtn.Checked = false;
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Invalid data input is Quantity");
                 quantitytextbox();
+            }
+         }
+
+        private void newbtn_Click(object sender, EventArgs e)
+        {
+            //codes for clearing specific pointed texboxes 
+            itemnametextbox.Clear();
+            pricetextbox.Clear();
+            quantityTextbox.Clear();
+            discounttextbox.Clear();
+            discountedtextbox.Clear();
+            changetextbox.Clear();
+            cash_renderedtextbox.Clear();
+        }
+
+        private void cancelbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void discounttextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void nodiscRdbtn_CheckedChanged(object sender, EventArgs e)
         {
             try
-        }
-            quantity_price_Convert();
-            discount_amt = (qty * price) * 0;
-            conputation_Formula_and_DisplayData();
-            seniocitizenRdbtn.Checked = false;
-            regularRdbtn.Checked = false;
-            EmployeeRdbtn.Checked = false;
-        }
-        catch(Exception)
-        {
-                MessageBox.Show("Input is Invalid in Quantity");
+            {
+                quantity_price_Convert();
+                discount_amt = (qty * price) * 0;
+                computation_Formula_and_DisplayData();
+                regularRdbtn.Checked = false;
+                EmployeeRdbtn.Checked = false;
+                nodiscRdbtn.Checked = false;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Invalid data input is Quantity");
                 quantitytextbox();
-    }
+            }
+        }
+
+        private void calculatebtn_Click(object sender, EventArgs e)
+        {
+
+          
+
+            // declaration of variables with data types
+            int qty;
+            double discount_amt, discounted_amt, cash_rendered, change;
+            qty = Convert.ToInt32(quantityTextbox.Text);
+            discount_amt = Convert.ToDouble(discounttextbox.Text);
+            discounted_amt = Convert.ToDouble(discountedtextbox.Text);
+            cash_rendered = Convert.ToDouble(cash_renderedtextbox.Text);
+
+            // accumulate totals
+            qty_total += qty;
+            discount_totalgiven += discount_amt;
+            discounted_total += discounted_amt;
+            change = cash_rendered - discounted_total;
+
+            // display results in textboxes
+            qty_totaltextbox.Text = qty_total.ToString();
+            discount_totaltextbox.Text = discount_totalgiven.ToString("n");
+            discounted_totaltextbox.Text = discounted_total.ToString("n");
+            changetextbox.Text = change.ToString("n");
+            cash_renderedtextbox.Text = cash_rendered.ToString("n");
+        }
     }
 }
+
     
 
 
