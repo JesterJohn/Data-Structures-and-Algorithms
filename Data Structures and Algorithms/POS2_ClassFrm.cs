@@ -22,9 +22,6 @@ namespace Data_Structures_and_Algorithms
         }
         private void foodrdbtn()
         {
-            foodARdbtn.Checked = false;
-            foodRdbtn.Checked = false;
-        }
         
 
         public POS2_ClassFrm()
