@@ -130,13 +130,6 @@
     <Compile Include="Payroll_FunctionFrm.Designer.cs">
       <DependentUpon>Payroll_FunctionFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="POS1.cs" />
-    <Compile Include="POS1_ClassFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="POS1_ClassFrm.Designer.cs">
-      <DependentUpon>POS1_ClassFrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="POS1_FunctionFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +148,12 @@
     <Compile Include="POS2_FuntionFrm.Designer.cs">
       <DependentUpon>POS2_FuntionFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="POS3_ClassFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS3_ClassFrm.Designer.cs">
+      <DependentUpon>POS3_ClassFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="POS3_FunctionFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +169,8 @@
     <Compile Include="Savebtn.Designer.cs">
       <DependentUpon>Savebtn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Variables.cs" />
+    <Compile Include="Variables1.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,9 +213,6 @@
     <EmbeddedResource Include="Payroll_FunctionFrm.resx">
       <DependentUpon>Payroll_FunctionFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="POS1_ClassFrm.resx">
-      <DependentUpon>POS1_ClassFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="POS1_FunctionFrm.resx">
       <DependentUpon>POS1_FunctionFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="POS2_FuntionFrm.resx">
       <DependentUpon>POS2_FuntionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS3_ClassFrm.resx">
+      <DependentUpon>POS3_ClassFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS3_FunctionFrm.resx">
       <DependentUpon>POS3_FunctionFrm.cs</DependentUpon>

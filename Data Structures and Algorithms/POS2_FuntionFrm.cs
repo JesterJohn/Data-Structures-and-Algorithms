@@ -250,6 +250,11 @@ namespace Data_Structures_and_Algorithms
             cash_renderedtextbox.Clear();
         }
 
+        private void quantityTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void cancelbtn_Click(object sender, EventArgs e)
         {
 

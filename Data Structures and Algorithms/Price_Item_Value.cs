@@ -9,7 +9,7 @@ namespace Data_Structures_and_Algorithms
     internal class Price_Item_Value
     {
         public String price, itemname, discount_amt;
-        public void SetPriceValue(string item_name, string item_price)
+        public void SetPriceItemValue(string item_name, string item_price)
         {
             itemname = item_name;
             price = item_price;
@@ -35,5 +35,7 @@ namespace Data_Structures_and_Algorithms
         {
             return discount_amt;
         }
+       
+
     }
 }

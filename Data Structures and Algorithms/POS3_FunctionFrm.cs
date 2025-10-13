@@ -291,7 +291,7 @@ namespace Data_Structures_and_Algorithms
             double price;
             this.BackColor = Color.LightCyan;
             foodARdbtn.Checked = false;
-            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle A.jpg");
+            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle A.jpg");
             A_CokeCheckBox.Checked = true;
             A_FriedChickenCheckBox.Checked = true;
             A_FriesCheckBox.Checked = true;
@@ -317,7 +317,7 @@ namespace Data_Structures_and_Algorithms
         {
             this.BackColor = Color.LightCyan;
             foodRdbtn.Checked = false;
-            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle B.jpg");
+            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle B.jpg");
             A_CokeCheckBox.Checked = false;
             A_FriedChickenCheckBox.Checked = false;
             A_FriesCheckBox.Checked = false;
@@ -340,8 +340,8 @@ namespace Data_Structures_and_Algorithms
             cash_given = Convert.ToDouble(cashgiventextbox.Text);
             total_amtpaid = Convert.ToDouble(totalbillstextbox.Text);
             change = cash_given - total_amtpaid;
-
             changetextbox.Text = change.ToString("n");
+            
             displaylistbox.Items.Add("Total Bills: " + " " + totalbillstextbox.Text);
             displaylistbox.Items.Add("Cash Given: " + " " + cashgiventextbox.Text);
             displaylistbox.Items.Add("Change: " + " " + changetextbox.Text);
@@ -364,7 +364,7 @@ namespace Data_Structures_and_Algorithms
         {
             foodRdbtn.Checked = false;
             foodARdbtn.Checked = false;
-            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
             A_CokeCheckBox.Checked = false;
             A_FriedChickenCheckBox.Checked = false;
             A_FriesCheckBox.Checked = false;
@@ -419,7 +419,7 @@ namespace Data_Structures_and_Algorithms
             totalqtytextbox.Text = total_qty.ToString();
             total_amount += discounted_amt;
             totalbillstextbox.Text = total_amount.ToString("n");
-            discountedtextbox.Text = discounted_amt.ToString("n");
+            discountedtextbox.Text = discounted_amt.ToString("n");  
         }
     }
 }

@@ -221,7 +221,7 @@ namespace Data_Structures_and_Algorithms
 
         private void bi_no_of_hrs_textbox_TextChanged(object sender, EventArgs e)
         {
-            basic_numhrs = Double.Parse(bi_no_of_hrs_textbox.Text);
+            basic_numhrs = Convert.ToDouble(bi_no_of_hrs_textbox.Text);
             basic_rate = Convert.ToDouble(bi_rate_per_hr_textbox.Text);
             basic_netincome = basic_numhrs * basic_rate;
             bi_incometextbox.Text = basic_netincome.ToString("n");
