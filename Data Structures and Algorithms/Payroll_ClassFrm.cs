@@ -44,7 +44,7 @@ namespace Data_Structures_and_Algorithms
             netincometextbox.Text = variables1.NetIncome.ToString("n"); 
         }
         private void computation_Basic_Formula_and_DisplayData()
-        {
+        {   
             variables1.BasicHours = Convert.ToDouble(bi_no_of_hrs_textbox.Text);
             variables1.BasicRatePerHour = Convert.ToDouble(bi_rate_per_hr_textbox.Text);
             variables1.BasicIncome = variables1.BasicHours * variables1.BasicRatePerHour;

@@ -16,7 +16,7 @@ namespace Data_Structures_and_Algorithms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Payroll_ClassFrm ());
+            Application.Run(new SampleLongMethod ());
         }
     }
 }

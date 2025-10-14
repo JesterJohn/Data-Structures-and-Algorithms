@@ -61,7 +61,7 @@ namespace Data_Structures_and_Algorithms
             B_FriesCheckBox.Checked = false;
             B_HawaiianCheckbox.Checked = false;
 
-            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -235,7 +235,7 @@ namespace Data_Structures_and_Algorithms
             displaylistbox.Items.Add("          CUSTOMER ORDER");
             displaylistbox.Items.Add("====================================");
 
-            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle A.jpg");
+            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle A.jpg");
 
             A_FriedChickenCheckBox.Checked = true;
             A_FriesCheckBox.Checked = true;
@@ -269,7 +269,7 @@ namespace Data_Structures_and_Algorithms
             displaylistbox.Items.Add("          CUSTOMER ORDER");
             displaylistbox.Items.Add("====================================");
 
-            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle B.jpg");
+            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Food Bundle B.jpg");
 
             A_FriedChickenCheckBox.Checked = false;
             A_FriesCheckBox.Checked = false;
@@ -307,7 +307,7 @@ namespace Data_Structures_and_Algorithms
             totalqtytextbox.Clear();
 
 
-            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            DisplayPicturebox.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
             A_CokeCheckBox.Checked = false;
             A_FriedChickenCheckBox.Checked = false;
             A_FriesCheckBox.Checked = false;
