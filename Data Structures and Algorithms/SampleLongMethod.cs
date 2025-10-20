@@ -25,7 +25,7 @@ namespace Data_Structures_and_Algorithms
 
         public SampleLongMethod()
         {
-            connectionString = "Data Source = C203-08; Initial Catalog = SampleDataBaseDb; user ID = SA; Password = B1Admin123@";
+            connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = SampleDataBaseDb; Integrated Security = True ";
             connection = new SqlConnection(connectionString);
             InitializeComponent();
         }
@@ -45,7 +45,7 @@ namespace Data_Structures_and_Algorithms
             if (connection.State != ConnectionState.Open)
                 connection.Open();
 
-            sql = "INSERT INTO Studentbl (Student_ID, Student_Name, Department, Picpath) VALUES ('" + student_notextbox.Text + "', '" + student_nametextbox.Text + "' + '" + departmenttextbox.Text + "' + '" + picpathtextbox.Text + "')";
+            sql = "INSERT INTO StudentTbl (Student_ID, Student_Name, Department, Picpath) VALUES ('" + student_notextbox.Text + "', '" + student_nametextbox.Text + "', '" + departmenttextbox.Text + "', '" + picpathtextbox.Text + "')";
             command = new SqlCommand(sql, connection);
             command.CommandType = CommandType.Text;
 
@@ -53,7 +53,7 @@ namespace Data_Structures_and_Algorithms
             adaptersql.InsertCommand = command;
             command.ExecuteNonQuery();
 
-            sql = "SELECT * FROM Studentbl";
+            sql = "SELECT * FROM StudentTbl";
             command = new SqlCommand(sql, connection);
             command.CommandType = CommandType.Text;
 
@@ -62,17 +62,17 @@ namespace Data_Structures_and_Algorithms
             command.ExecuteNonQuery();
 
             dset = new DataSet();
-            adaptersql.Fill(dset, "Studentbl");
+            adaptersql.Fill(dset, "StudentTbl");
 
             griddisplay.DataSource = dset.Tables[0];
 
-            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
             student_notextbox.Clear();
             student_nametextbox.Clear();
             departmenttextbox.Clear();
             picpathtextbox.Clear();
 
-            if (connection.State == ConnectionState.Closed)
+            if (connection.State != ConnectionState.Closed)
                 connection.Close();
         }
 
@@ -83,10 +83,10 @@ namespace Data_Structures_and_Algorithms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (connection.State == ConnectionState.Open)
+            if (connection.State != ConnectionState.Open)
                 connection.Open();
 
-            sql = "SELECT  * FROM Studentbl WHERE Student_ID = '" + student_nametextbox.Text + "'";
+            sql = "SELECT  * FROM StudentTbl WHERE Student_ID = ' " + student_notextbox.Text + " ' ";
             command = new SqlCommand(sql, connection);
             command.CommandType = CommandType.Text;
 
@@ -95,7 +95,7 @@ namespace Data_Structures_and_Algorithms
             command.ExecuteNonQuery();
 
             dset = new DataSet();
-            adaptersql.Fill(dset, "Studentbl");
+            adaptersql.Fill(dset, "StudentTbl");
 
             griddisplay.DataSource = dset.Tables[0];
 
@@ -104,16 +104,16 @@ namespace Data_Structures_and_Algorithms
             picpathtextbox.Text = dset.Tables[0].Rows[0][3].ToString();  
             pictureBox1.Image = Image.FromFile(picpathtextbox.Text);
 
-            if (connection.State == ConnectionState.Closed)
+            if (connection.State != ConnectionState.Closed)
                 connection.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (connection.State == ConnectionState.Open)
+            if (connection.State != ConnectionState.Open)
                 connection.Open();
 
-            sql = "DELETE FROM Studentbl WHERE Student_ID = '" + student_notextbox.Text + "'";
+            sql = "DELETE FROM StudentTbl WHERE Student_ID = '" + student_notextbox.Text + "'";
             command = new SqlCommand(sql, connection);
             command.CommandType = CommandType.Text;
 
@@ -121,7 +121,7 @@ namespace Data_Structures_and_Algorithms
             adaptersql.DeleteCommand = command;
             command.ExecuteNonQuery();
 
-            sql = "SELECT * FROM Studentbl";
+            sql = "SELECT * FROM StudentTbl";
             command = new SqlCommand(sql, connection);
             command.CommandType = CommandType.Text;
 
@@ -130,21 +130,25 @@ namespace Data_Structures_and_Algorithms
             command.ExecuteNonQuery();
 
             dset = new DataSet();
-            adaptersql.Fill(dset, "Studentbl");
+            adaptersql.Fill(dset, "StudentTbl");
 
             griddisplay.DataSource = dset.Tables[0];
-            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
 
-            if (connection.State == ConnectionState.Closed)
+            student_nametextbox.Clear();
+            student_notextbox.Clear();
+            departmenttextbox.Clear();
+
+            if (connection.State != ConnectionState.Closed)
                 connection.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (connection.State == ConnectionState.Open)
+            if (connection.State != ConnectionState.Open)
                 connection.Open();
 
-            sql = "UPDATE Studentbl SET Student_Name = '" + student_nametextbox.Text + "', Department = '" + departmenttextbox.Text + "', Picpath = '" + picpathtextbox.Text + "' WHERE Student_ID = '" + student_notextbox.Text + "'";
+            sql = "UPDATE StudentTbl SET Student_Name = '" + student_nametextbox.Text + "', Department = '" + departmenttextbox.Text + "', Picpath = '" + picpathtextbox.Text + "' WHERE Student_ID = '" + student_notextbox.Text + "'";
             command = new SqlCommand(sql, connection);
 
             command.CommandType = CommandType.Text;
@@ -153,7 +157,7 @@ namespace Data_Structures_and_Algorithms
             adaptersql.UpdateCommand = command;
             command.ExecuteNonQuery();
 
-            sql = "SELECT * FROM Studentbl";
+            sql = "SELECT * FROM StudentTbl";
             command = new SqlCommand(sql, connection);
             command.CommandType = CommandType.Text;
 
@@ -162,23 +166,23 @@ namespace Data_Structures_and_Algorithms
             command.ExecuteNonQuery();
 
             dset = new DataSet();
-            adaptersql.Fill(dset, "Studentbl");
+            adaptersql.Fill(dset, "StudentTbl");
 
             griddisplay.DataSource = dset.Tables[0];
-            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
 
             student_notextbox.Clear();
             student_nametextbox.Clear();
             departmenttextbox.Clear();
             picpathtextbox.Clear();
 
-            if (connection.State == ConnectionState.Closed)
+            if (connection.State != ConnectionState.Closed)
                 connection.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
 
             student_notextbox.Clear();
             student_nametextbox.Clear();    
@@ -188,7 +192,7 @@ namespace Data_Structures_and_Algorithms
 
         private void button5_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:\\Users\\C203-08\\source\\repos\\JesterJohn\\Data-Structures-and-Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
+            pictureBox1.Image = Image.FromFile("C:\\Users\\Jester\\source\\repos\\Data Structures and Algorithms\\Data Structures and Algorithms\\Images\\FB\\Default.jpg");
 
             student_notextbox.Clear();
             student_nametextbox.Clear();
