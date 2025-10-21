@@ -56,7 +56,7 @@ namespace Data_Structures_and_Algorithms
             pos_sql_dataadapter.UpdateCommand = pos_sql_command;
             pos_sql_command.ExecuteNonQuery();
         }
-        public void pos_sqldatasetSelect()
+        public void pos_sqldatasetSELECT()
         {
             pos_sql_dataset = new DataSet();
             pos_sql_dataadapter.Fill(pos_sql_dataset, "pos_nameTbl ");
@@ -84,7 +84,7 @@ namespace Data_Structures_and_Algorithms
         }
         public void pos_select_cashier_SELECTdisplay()
         {
-            pos_sql_dataset = new DataSet()
+            pos_sql_dataset = new DataSet();
             pos_sql_dataadapter.Fill(pos_sql_dataset, "pos_empRegTbl");
         }
 
