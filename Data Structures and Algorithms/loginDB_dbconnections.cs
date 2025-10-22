@@ -20,7 +20,7 @@ namespace Data_Structures_and_Algorithms
         public void login_connString()
         {
             login_sql_connection = new SqlConnection();
-            login_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = SampleDataBaseDb; Integrated Security = True ";
+            login_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = POSDB; Integrated Security = True ";
             login_sql_connection = new SqlConnection(login_connectionString);
             login_sql_connection.ConnectionString = login_connectionString;
             login_sql_connection.Open();

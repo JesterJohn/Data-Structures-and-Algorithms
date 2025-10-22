@@ -22,7 +22,7 @@ namespace Data_Structures_and_Algorithms
         public void pos_connString()
         {
             pos_sql_connection = new SqlConnection();
-            pos_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = SampleDataBaseDb; Integrated Security = True ";
+            pos_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = POSDB; Integrated Security = True ";
             pos_sql_connection = new SqlConnection(pos_connectionString);
             pos_sql_connection.ConnectionString = pos_connectionString;
             pos_sql_connection.Open();
@@ -32,9 +32,10 @@ namespace Data_Structures_and_Algorithms
             pos_sql_command = new SqlCommand(pos_sql, pos_sql_connection);
             pos_sql_command.CommandType = CommandType.Text;
         }
+
         public void pos_sqladapterSelect()
         {
-            pos_sql_dataadapter = new SqlDataAdapter();
+            pos_sql_dataadapter = new SqlDataAdapter(); 
             pos_sql_dataadapter.SelectCommand = pos_sql_command;
             pos_sql_command.ExecuteNonQuery();
         }
@@ -59,7 +60,7 @@ namespace Data_Structures_and_Algorithms
         public void pos_sqldatasetSELECT()
         {
             pos_sql_dataset = new DataSet();
-            pos_sql_dataadapter.Fill(pos_sql_dataset, "pos_nameTbl ");
+            pos_sql_dataadapter.Fill(pos_sql_dataset, "pos_nameTbl"); 
         }
         public void pos_sqladapterSELECTSALES()
         { 
@@ -68,15 +69,22 @@ namespace Data_Structures_and_Algorithms
         }
         public void pos_select()
         {
-            pos_sql = "SELECT * FROM pos_nameTbl INNER JOIN pos_picTbl ON pos_nameTbl.pos_id = pos_picTbl.pos_id INNER JOIN pos_priceTbl ON pos_pipcTbl.pos_id = por_priceTbl.pos_id";
+           
+            pos_sql = "SELECT * FROM pos_nameTbl INNER JOIN pos_picTbl ON " +
+                        "pos_nameTbl.pos_id = pos_picTbl.pos_id INNER JOIN pos_priceTbl ON " +
+                        "pos_picTbl.pos_id = pos_priceTbl.pos_id";
         }
         public void pos_select_cashier()
         {
-            pos_sql = "SELECT * FROM pos_nameTbl INNER JOIN pos_picTbl ON pos_nameTbl.pos_id = pos_picTbl.pos_id INNER JOIN pos_priceTbl ON pos_picTbl.pps_id = pos_priceTbl.pos_id WHERE pos_nametbl.pos_id = 1"; 
+            pos_sql = "SELECT * FROM pos_nameTbl INNER JOIN pos_picTbl ON " + 
+                "pos_nameTbl.pos_id = pos_picTbl.pos_id INNER JOIN pos_priceTbl ON" +  
+                "pos_picTbl.pps_id = pos_priceTbl.pos_id WHERE pos_nametbl.pos_id = 1"; 
         }
         public void pos_select_cashier1()
         {
-            pos_sql = "SELECT * FROM pos_nameTbl INNER JOIN pos_picTbl ON pos_nameTbl.pos_id = pos_picTbl.pos_id INNER JOIN pos_priceTbl ON pos_picTbl.pps_id = pos_priceTbl.pos_id WHERE pos_nametbl.pos_id = 2"; 
+            pos_sql = "SELECT * FROM pos_nameTbl INNER JOIN pos_picTbl ON" + 
+                "pos_nameTbl.pos_id = pos_picTbl.pos_id INNER JOIN pos_priceTbl ON " + 
+                "pos_picTbl.pps_id = pos_priceTbl.pos_id WHERE pos_nametbl.pos_id = 2"; 
         }
         public void pos_select_display()
         {

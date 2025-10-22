@@ -16,7 +16,7 @@ namespace Data_Structures_and_Algorithms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SampleLongMethod ());
+            Application.Run(new POS_Admin ());
         }
     }
 }

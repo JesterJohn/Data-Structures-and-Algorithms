@@ -20,7 +20,7 @@ namespace Data_Structures_and_Algorithms
         public void useraccount_connString()
         {
             useraccount_sql_connection = new SqlConnection();
-            useraccount_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = SampleDataBaseDb; Integrated Security = True ";
+            useraccount_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = POSDB; Integrated Security = True ";
             useraccount_sql_connection = new SqlConnection(useraccount_connectionString);
             useraccount_sql_connection.ConnectionString = useraccount_connectionString;
             useraccount_sql_connection.Open();
@@ -56,7 +56,7 @@ namespace Data_Structures_and_Algorithms
         }
         public void useraccount_sqladapterSELECT()
         { 
-            useraccount_sql_dataset = new DataSet);
+            useraccount_sql_dataset = new DataSet();
             useraccount_sql_dataadapter.Fill(useraccount_sql_dataset, "pos_empRegTbl");
         }
         public void useraccount_sqldatasetSELECT_Account()

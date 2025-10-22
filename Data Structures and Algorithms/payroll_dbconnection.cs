@@ -19,7 +19,7 @@ namespace Data_Structures_and_Algorithms
         public void payroll_connString()
         {
             payroll_sql_connection = new SqlConnection();
-            payroll_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = SampleDataBaseDb; Integrated Security = True ";
+            payroll_connectionString = "Data Source = LAPTOP-9QMQALA3\\SQLEXPRESS ; Initial Catalog = POSDB; Integrated Security = True ";
             payroll_sql_connection = new SqlConnection(payroll_connectionString);
             payroll_sql_connection.ConnectionString = payroll_connectionString;
             payroll_sql_connection.Open();
